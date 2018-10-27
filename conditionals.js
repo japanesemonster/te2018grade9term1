@@ -4,10 +4,14 @@ const READLINE = require("readline-sync");
 // You cannot see an R-rated movie unless you are at least 18, or you are with
 // an adult. Write code that prints whether or not someone can see an
 // R-rated movie.
+
+
 console.log("*** Problem 1: R-rated ***");
 let age = READLINE.question("Enter your age: ");
 let withAdult = READLINE.question("Are you with an adult? (yes or no): ");
 
+
+if (age >= 18 || withAdult){}
 
 // **** Problem 2: Umbrella ****
 // You should bring an umbrella when you travel, but only if it is raining.
@@ -19,6 +23,18 @@ let raining = READLINE.question("Is it raining? (yes or no): ");
 let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no): ");
 
 
+
+if (raining == "yes" && thunderstorming == "no"){
+
+console.log("bring an umbrella")
+
+}else{
+
+console.log("don't bring an unbrella")
+
+}
+
+
 // **** Problem 3: Monkey Trouble ****
 // There are two monkeys: Bubbles and Spankey. You are in trouble if both of
 // them are smiling, or if neither are smiling. Write code that prints if we
@@ -26,6 +42,16 @@ let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no): ");
 console.log("*** Problem 3: Monkey Trouble ***");
 let bubbles = READLINE.question("Is Bubbles smiling? (yes or no): ");
 let spankey = READLINE.question("Is Spankey smiling? (yes or no): ");
+
+ if(bubbles == "yes" && spankey == "yes"){
+
+ 	console.log("you are in trouble")
+
+ }else{
+
+ 	console.log("you are not in trouble")
+
+}
 
 
 // **** Problem 4: First Place ****

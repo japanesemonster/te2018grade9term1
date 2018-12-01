@@ -11,10 +11,13 @@ withoutEnd("coding") → "odin"
 
 function withoutEnd(str) {
 
-}
+  let newStr = (1,str.length-1);
 
-// Remove comment below to test this function.
-//testWithoutEnd();
+  return newStr;
+
+}
+// Remove comment below to test this function. 
+testWithoutEnd();
 
 /******************************************************************************
                                    frontAgain()
@@ -30,10 +33,17 @@ frontAgain("ed") → true
 
 function frontAgain(str) {
 
+  let firstTwo = str.substring(0,2)
+  let lastTwo = str.substring(str.length-2,str.length)
+
+  if(firstTwo == lastTwo){
+    return true
+  }else{
+    return false
 }
 
 // Test this function.
-//testFrontAgain();
+ testFrontAgain();
 
 /******************************************************************************
                                    deFront()

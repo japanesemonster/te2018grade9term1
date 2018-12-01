@@ -1,4 +1,3 @@
-
 /******************************************************************************
                                    sumDouble(a, b)
 Instructions:
@@ -10,11 +9,22 @@ sumDouble(1, 2) → 3
 sumDouble(3, 2) → 5
 sumDouble(2, 2) → 8
 *******************************************************************************/
+function sumDouble(num1,num2){
 
+ if(num1 == num2){
 
+   return (num1 + num2) * 2
 
-// Remove comment below to test this function.
-//testSumDouble();
+  }else{
+
+   return num1 + num2 
+
+  }
+
+}
+
+console.log(sumDouble(6,6));
+// Remove comment below to test this function.t\estSumDouble();
 
 /******************************************************************************
                                    makes10(a, b)
@@ -28,12 +38,24 @@ makes10(1, 9) → true
 *******************************************************************************/
 
 
+function makes10(a,b){
 
+  if(a + b == 10 ||(a == 10 || b == 10)){
+
+    return true
+
+  }else{
+
+    return false
+
+  }
+
+}
+console.log(makes10(2,8))
 // Remove comment below to test this function.
-//testMakes10();
-
-/******************************************************************************
-                          parrotTrouble(talking, hour)
+testMakes10();
+//******************************************************************************
+ /*                         parrotTrouble(talking, hour)
 Instructions:
 We have a loud talking parrot. The "talking" parameter is a boolean that
 represents if the parrot is talking. The "hour" parameter is the current hour
@@ -44,12 +66,24 @@ Examples:
 parrotTrouble(true, 6) → true
 parrotTrouble(true, 7) → false
 parrotTrouble(false, 6) → false
-*******************************************************************************/
+ */
 
+ function parrotTrouble(talking,hour){
 
+  if(talking &&( hour < 7  ||  hour > 20)){
 
+    return (true)
+  
+  }else{
+
+    return (false)
+
+  }
+
+}
+console.log(parrotTrouble(6,21))
 // Remove comment below to test this function.
-//testParrotTrouble();
+testParrotTrouble();
 
 /******************************************************************************
                              alarmClock(day, vacation)
@@ -65,11 +99,17 @@ alarmClock(1, false) → "7:00"
 alarmClock(6, true) → "off"
 alarmClock(0, false) → "10:00"
 *******************************************************************************/
-
-
-
+function alarmClock(day,vacation){
+  if(vaction == true){
+    return(1,2,3,4,5 == "10:00" && 6,0 == "off")
+  if(vacation == false){
+    return(1,2,3,4,5 == "7:00" && 6,0 == "10:00")
+  }
+}
+}
+console.log(alarmClock(1,2))
 // Remove comment below to test this function.
-//testAlarmClock();
+testAlarmClock();
 
 /******************************************************************************
                       caughtSpeeding(speed, isBirthday)
